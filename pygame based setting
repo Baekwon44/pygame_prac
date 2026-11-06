@@ -1,0 +1,39 @@
+# 1. pygame 선언(필요한 모듈 불러오기)
+import pygame as py
+
+# 2. pygame 초기화(게임을 실행하기 위해 반드시 필요한 코드)
+py.init()
+
+# 화면 크기 설정
+screen_width = 480
+screen_height = 640
+
+# 게임 화면 설정
+screen = py.display.set_mode((screen_width,screen_height))
+
+# 화면 상단에 표시될 게임 제목 설정 
+py.display.set_caption("수능 피하기")
+
+# Fps 설정을 위해 시계 객체 생성
+clock = py.time.Clock()
+
+#게임의 실행 상태 설정
+running = True
+while running:
+
+    # 초당 30프레임을 게임 실행
+    dt = clock.tick(30)
+
+    #1) 이벤트 처리(키보드, 마우스 등)
+
+    #2) 게임 캐릭터 위치 정
+
+    #3) 충돌 처리
+
+    #4) 화면에 그리기
+
+    # 지금까지 그린 내용을 실제 화면에 표시
+    py.display.update()
+
+# 게임이 종료되면 파이게임 종료
+py.quit()
